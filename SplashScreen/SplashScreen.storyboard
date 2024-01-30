@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SplashScreenViewController" customModule="FisdomSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEm-ml-xmc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UxZ-WW-zE0">
+                                        <rect key="frame" x="41.5" y="243.5" width="331" height="331"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="UxZ-WW-zE0" secondAttribute="height" multiplier="1:1" id="5ib-DA-4sg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fisdom_splash" translatesAutoresizingMaskIntoConstraints="NO" id="xHu-OS-5vL">
+                                        <rect key="frame" x="152" y="694.5" width="110" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="S1X-rF-s86"/>
+                                            <constraint firstAttribute="width" constant="110" id="hwu-3Q-eiq"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VND-mR-Kc0">
+                                <rect key="frame" x="0.0" y="782.5" width="414" height="79.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtR-iI-fFs">
+                                        <rect key="frame" x="178" y="40" width="58.5" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="B39-vj-gwK">
+                                        <rect key="frame" x="191" y="0.0" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="ICe-2h-Yin"/>
+                                            <constraint firstAttribute="width" constant="32" id="gnb-6x-XSY"/>
+                                        </constraints>
+                                        <color key="color" red="0.24313725490196078" green="0.10196078431372549" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="OtR-iI-fFs" firstAttribute="top" secondItem="B39-vj-gwK" secondAttribute="bottom" constant="8" id="WMV-7y-F12"/>
+                                    <constraint firstItem="B39-vj-gwK" firstAttribute="top" secondItem="VND-mR-Kc0" secondAttribute="top" id="ZSg-VY-An6"/>
+                                    <constraint firstItem="B39-vj-gwK" firstAttribute="centerX" secondItem="VND-mR-Kc0" secondAttribute="centerX" id="csV-1d-S2G"/>
+                                    <constraint firstAttribute="bottom" secondItem="OtR-iI-fFs" secondAttribute="bottom" constant="24" id="g2x-81-Pz7"/>
+                                    <constraint firstItem="OtR-iI-fFs" firstAttribute="centerX" secondItem="VND-mR-Kc0" secondAttribute="centerX" id="wfx-n4-PBh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QEm-ml-xmc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="0Q5-xK-HKc"/>
+                            <constraint firstItem="xHu-OS-5vL" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="AuP-FC-9xi"/>
+                            <constraint firstItem="UxZ-WW-zE0" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="CFX-LU-ZIb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="VND-mR-Kc0" secondAttribute="bottom" id="NhO-Xs-rN1"/>
+                            <constraint firstItem="VND-mR-Kc0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="QrF-uG-Fpk"/>
+                            <constraint firstItem="QEm-ml-xmc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="SRD-pc-Qx8"/>
+                            <constraint firstItem="B39-vj-gwK" firstAttribute="top" secondItem="xHu-OS-5vL" secondAttribute="bottom" constant="12" id="VsY-TP-8YQ"/>
+                            <constraint firstItem="UxZ-WW-zE0" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" multiplier="0.8" id="ebf-BS-eFZ"/>
+                            <constraint firstItem="UxZ-WW-zE0" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="jN9-fB-VdF"/>
+                            <constraint firstItem="QEm-ml-xmc" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="ljk-dI-r2K"/>
+                            <constraint firstItem="VND-mR-Kc0" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="nsC-Io-mjO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="QEm-ml-xmc" secondAttribute="bottom" id="q98-PT-Sw2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="container" destination="QEm-ml-xmc" id="4m0-Bs-WPJ"/>
+                        <outlet property="fisdomLogo" destination="xHu-OS-5vL" id="vqV-4b-tMj"/>
+                        <outlet property="partnerLogo" destination="UxZ-WW-zE0" id="P09-Fc-MEV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fisdom_splash" width="344" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
